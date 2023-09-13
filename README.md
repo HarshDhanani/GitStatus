@@ -1,40 +1,47 @@
-# GitStatus
-IMP GIT COMMANDS
+# GitStatus: Important Git Commands
 
+This guide provides a list of important Git commands that you might need to use.
 
------------------------FIRST ROUND----------------------
-Commands: 
-{FIRST TIME ONLY}
+## First Round
 
-git init --> for create an empty git repo(local)
+These commands are typically used when you're setting up your Git repository for the first time.
 
-git remote add origin "REMOTE URL" 
+1. `git init`
+   - This command creates an empty Git repository locally.
 
-git status
+2. `git remote add origin "REMOTE URL"`
+   - This command links your local repository to the remote one.
 
-git add -A       
+3. `git status`
+   - This command shows the status of your local repository.
 
---> this command will send all the files to the staging area (check with 'git status' command that everyhting is in green or not)
+4. `git add -A`
+   - This command stages all changes for commit. You can check if everything is staged correctly by running `git status` and ensuring everything is green.
 
-{Before doing commit first time we need to execure this 2 commands}
+Before making your first commit, you need to set up your Git user name and email:
 
-git config --global user.name "YOUR NAME"
-git config --gloabal user.email "YOUR EMAIL" 
+5. `git config --global user.name "YOUR NAME"`
+6. `git config --global user.email "YOUR EMAIL"`
 
+7. `git commit -m "YOUR COMMIT MESSAGE/COMMENT"`
+   - This command commits your changes with a message.
 
-git commit -m "YOUR COMMIT MESSAGE/COMMENT"
-git push -u origin master --> this will send all the files from git(local) to github(remote)
+8. `git push -u origin master`
+   - This command pushes all changes from your local repository to the remote one. You'll be prompted to enter your remote username and password.
 
--->then it will ask you the remote user and password
+If you've made some changes on the remote repository and want to sync them with your local one, use this command:
 
+9. `git pull origin master`
 
--->after editing some code on remote url you have sync with the local repo as well for that the command is 
+## Second Round
 
-git pull origin master
+These commands are used for regular work with your Git repository:
 
+1. `git status`
+   - Check the status of your local repository.
 
-------------------SECOND ROUND-------------------
-status
-add
-commit
+2. `git add`
+   - Stage changes for commit.
 
+3. `git commit`
+   - Commit your changes.
